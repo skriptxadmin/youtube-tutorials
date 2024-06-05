@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btnA">Button A</button>
+
+    <button class="btnB">Button B</button>
+    <button class="btnB">Button C</button>
+
+    <input type="text" name="username">
+
+    <script>
+        const btnA = document.getElementById("btnA");
+        console.log(btnA)
+
+        const btnB = document.getElementsByClassName("btnB");
+        console.log(btnB)
+
+
+        const btnA1 = document.querySelector("#btnA");
+        console.log(btnA1);
+
+        const btnB1 = document.querySelectorAll(".btnB");
+        console.log(btnB1);
+
+        const btns = document.getElementsByTagName("button");
+        console.log(btns);
+
+        const username = document.getElementsByName('username');
+        console.log(username);
+
+
+    </script>
+   
+</body>
+</html>
