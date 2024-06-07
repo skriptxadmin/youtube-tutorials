@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown{
+            position:relative;
+        }
+        .dropdown .dropdown-list{
+            position:absolute;
+            margin:0;
+            padding:0;
+            list-style: none;
+            background: white;
+            width:0px;
+            max-height: 0px;
+            overflow: hidden;
+            visibility: hidden;
+            border: 1px solid #cdcdcd;
+            transition: max-height 0.3s linear;
+            
+        }
+        .dropdown .dropdown-list .dropdown-item{
+            width: 100%;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            background-color: transparent;
+            border:none;
+        }
+        .dropdown .dropdown-list li:not(:last-child) .dropdown-item{
+            border-bottom: 1px solid #cdcdcd;
+        }
+        .dropdown.show .dropdown-list{
+            width:90px;
+            max-height: 150px;
+            visibility: visible;
+            transition: max-height 2s linear;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="dropdown">
+        <button class="dropdown-toggle">Click Me!</button>
+        <ul class="dropdown-list">
+            <li><button class="dropdown-item">Item 1</button></li>
+            <li><button class="dropdown-item">Item 2</button></li>
+        </ul>
+    </div>
+   
+
+    <script>
+
+        const dptoggles = document.querySelectorAll('.dropdown-toggle');
+
+        dptoggles.forEach((dptoggle)=>{
+            dptoggle.addEventListener('click', onDropdownToggleClick)
+        })
+
+        function onDropdownToggleClick(event){
+
+            const ele = event.target;
+            const dropdown = ele.closest('.dropdown');
+            dropdown.classList.toggle('show');
+
+        }
+
+    </script>
+
+</body>
+</html>
