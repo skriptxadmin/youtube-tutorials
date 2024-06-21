@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width:100%;
+            height: 100px;
+            background: gainsboro;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+    </div>
+
+    <script>
+
+        const container = document.querySelector(".container");
+
+        // const para = '<p class="para">This is a simple para</p>';
+
+        // const button = '<button class="btn-click">Click Me</button>'
+
+        const para = document.createElement('p');
+        para.classList.add('para');
+        para.innerText = 'This is a simple para';
+
+        const button = document.createElement('button');
+        button.classList.add('btn-click');
+        button.innerText = 'Click Me';
+        button.addEventListener('click', function(){
+            console.log("button is clicked")
+        })
+
+
+        container.appendChild(para);
+        container.appendChild(button);
+
+
+    </script>
+</body>
+</html>
