@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #f7f7f7;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .flag{ /* ratio 11:8*/
+    width: 398px;
+    height: 290px;
+    
+  }
+  .stripe.white{
+    height:27px;
+    width: 100%;
+    background-color: white;
+  }
+  .stripe.blue{
+    height:45px;
+    width: 100%;
+    background-color: #0038b8;
+  }
+  .star-container{
+    height:145px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+  }
+
+  .star{
+    width: 120px;
+    height: 5px;
+    background-color: #0038b8;
+    position:absolute;
+  }
+  
+  .star.one{
+  
+    bottom: 35px;
+    left: calc(50% - 60px);
+  }
+  .star.two{
+    bottom: 85px;
+    left: calc(50% - 30px);
+    transform: rotate(60deg);
+  }
+  .star.three{
+    bottom: 85px;
+    left: calc(50% - 90px);
+    transform: rotate(-60deg);
+
+  }
+  .star.four{
+    top: 35px;
+    left: calc(50% - 60px);
+  }
+
+  .star.five{
+    top: 85px;
+    left: calc(50% - 30px);
+    transform: rotate(-60deg);
+  }
+
+  .star.six{
+    top: 85px;
+    left: calc(50% - 90px);
+    transform: rotate(60deg);
+
+  }

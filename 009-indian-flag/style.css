@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background-color: white;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .rect {
+    width: 450px;
+    height: 100px;
+  }
+  
+  .flag {
+    position: relative;
+  }
+  .flag .chakra {
+    position: absolute;
+    border: 3px solid #06038d;
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    border-radius: 50%;
+    z-index: 1000;
+  }
+  
+  .flag .chakra .spoke {
+    width: 1px;
+    height: 98px;
+    border: 1px solid #06038d;
+    position: absolute;
+    left: 50%;
+  }
+  
+  .flag .chakra .spoke:nth-child(2) {
+    transform: rotate(15deg);
+  }
+  .flag .chakra .spoke:nth-child(3) {
+    transform: rotate(30deg);
+  }
+  .flag .chakra .spoke:nth-child(4) {
+    transform: rotate(45deg);
+  }
+  .flag .chakra .spoke:nth-child(5) {
+    transform: rotate(60deg);
+  }
+  .flag .chakra .spoke:nth-child(6) {
+    transform: rotate(75deg);
+  }
+  .flag .chakra .spoke:nth-child(7) {
+    transform: rotate(90deg);
+  }
+  .flag .chakra .spoke:nth-child(8) {
+    transform: rotate(105deg);
+  }
+  .flag .chakra .spoke:nth-child(9) {
+    transform: rotate(120deg);
+  }
+  .flag .chakra .spoke:nth-child(10) {
+    transform: rotate(135deg);
+  }
+  .flag .chakra .spoke:nth-child(11) {
+    transform: rotate(150deg);
+  }
+  .flag .chakra .spoke:nth-child(12) {
+    transform: rotate(165deg);
+  }
+  .saffron {
+    background-color: #ff671f;
+  }
+  .white {
+    background-color: #fff;
+  }
+  .green {
+    background-color: #046a38;
+  }
+  
